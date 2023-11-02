@@ -72,7 +72,7 @@ blockquote {
 
 .blog {
 	display: grid;
-	grid-template-columns: 200px 600px 400px;
+	grid-template-columns: 1fr 4fr 2fr;
 	grid-template-rows: auto;
 	column-gap: 40px;
 	justify-content: center;
@@ -121,7 +121,7 @@ blockquote {
 	padding: 0;
 	color: var(--tmava); 
 	font-size: 30px;
-	margin: 30px 0;
+	display: grid;
 }
 
 blockquote::before,
@@ -131,8 +131,8 @@ blockquote::after {
 	background-color: var(--limetka);
 	width: 100px;
 	height: 2px;
-	text-align: center;
 	margin: 30px 0;
+	justify-self: center;
 }
 
 .tip {
@@ -140,10 +140,22 @@ blockquote::after {
 	padding: 20px;
 }
 
-h1 {
+h1,
+h2,
+h3 {
 	color: var(--zelena);
-	font-size: 60px;
 }
+
+h1 {
+	font-size: 60px;
+	margin: 40px 0;
+}
+
+h2 {
+	font-size: 40px;
+	margin: 30px 0;
+}
+
 
 .tip a {
 	color: var(--oranzova);
