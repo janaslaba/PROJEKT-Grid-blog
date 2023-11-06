@@ -68,6 +68,11 @@ blockquote {
 
 .blog img {
 	width: 100%;
+	margin: 0;
+}
+
+figure {
+	margin: 20px 0;
 }
 
 .blog {
@@ -77,6 +82,7 @@ blockquote {
 	column-gap: 40px;
 	justify-content: center;
 }
+
 
 .blog header,
 .blog h2,
@@ -99,19 +105,29 @@ blockquote {
 }
 
 .blog footer {
-	grid-column: 1 / 4;
+	grid-column: 2 / 3;
+	color: var(--tmava);
+	font-size: 12px;
+}
+
+footer a {
+	color: var(--tmava);
+	font-size: 12px;
 }
 
 header {
 	margin: 50px 0;
+	justify-self: start;
 } 
 
+.meta {
+	color: var(--tmava);
+}
 figcaption {
 	color: var(--tmava);
 }
 
 .blog header,
-.blog h2,
 .blog blockquote {
 	justify-self: center;
 }
@@ -159,4 +175,12 @@ h2 {
 
 .tip a {
 	color: var(--oranzova);
+}
+
+.tip-vlevo {
+	border-right: 2px solid var(--zluta);
+}
+
+.tip-vpravo {
+	border-left: 2px solid var(--zluta);
 }
