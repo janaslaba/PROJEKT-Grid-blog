@@ -127,9 +127,12 @@ figcaption {
 	color: var(--tmava);
 }
 
-.blog header,
 .blog blockquote {
 	justify-self: center;
+}
+
+.blog header {
+	justify-self: start;
 }
 
 blockquote {
